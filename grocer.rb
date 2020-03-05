@@ -104,4 +104,4 @@ cart = [
 
 coupons = [{:item => "AVOCADO", :num => 2, :cost => 5.00}]
 
-puts apply_coupons(cart, coupons)
+puts checkout(cart, coupons)
