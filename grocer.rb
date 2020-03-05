@@ -55,6 +55,7 @@ def apply_coupons(cart, coupons)
         :clearance => this_item_hash[:clearance],
         :count => coupons[i][:num]
       }
+    end
       
     i += 1
     
