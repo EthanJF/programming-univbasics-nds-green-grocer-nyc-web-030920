@@ -82,4 +82,9 @@ def checkout(cart, coupons)
   # some irritated customers
 end
 
-cart = 
+cart = [
+  {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 3},
+  {:item => "KALE",    :price => 3.00, :clearance => false, :count => 1}
+]
+
+coupons = 
