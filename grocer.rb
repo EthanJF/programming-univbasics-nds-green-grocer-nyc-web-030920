@@ -99,7 +99,7 @@ def checkout(cart, coupons)
   applied_clearance = apply_clearance(applied_coupons)
   
   while i < applied_clearance.length do
-    
+    total += applied_clearance[i]
 end
 
 cart = [
