@@ -45,9 +45,7 @@ def apply_coupons(cart, coupons)
   while i < coupons.length do
     this_item_hash = find_item_by_name_in_collection(coupons[i][:item],cart)
     
-    this_item_hash[:count] > coupons[i][:num] ?
-    this_item_hash[:count] -= coupons[i][:num] :
-    cart.delete_at(cart.index(this_item_hash)) 
+    this_item_hash[:count] -= coupons[i][:num] 
     
     cart << {
       :item => "#{this_item_hash[:item]} W/COUPON",
